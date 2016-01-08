@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/grade_bar"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="25dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:text="Name"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="left"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="BORROM"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/grade_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="INFORMATION"
+            android:id="@+id/info_bar"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="25dp" />
+
+        <LinearLayout
+            android:id="@+id/student_image"
+            android:layout_below="@id/info_bar"
+            android:layout_width="150dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="STUDENT"
+                android:layout_width="match_parent"
+                android:textSize="22sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="150dp"
+                android:background="@android:color/background_dark"
+                android:layout_height="150dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/student_image"
+            android:layout_below="@id/info_bar"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="COMPUTER SCIENC"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
