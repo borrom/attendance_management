@@ -27,6 +27,9 @@
         android:layout_height="?attr/actionBarSize">
 
         <RadioButton
+            android:text="attendance"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/white"
             style="@style/classStyle"
             android:id="@+id/attendance_id"
             android:layout_width="0dp"
@@ -35,13 +38,19 @@
 
 
         <RadioButton
-            style="@style/classStyle"
+            android:text="student"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/white"
+            style="@style/studentStyle"
             android:id="@+id/student_id"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent" />
 
         <RadioButton
+            android:text="class"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/white"
             style="@style/classStyle"
             android:id="@+id/class_id"
             android:layout_width="0dp"

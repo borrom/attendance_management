@@ -10,7 +10,12 @@
 
     <style name="classStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
         <item name="android:button">@null</item>
-        <item name="android:background">@drawable/class_drawable</item>
+        <item name="android:background">@drawable/student_drawable</item>
+    </style>
+
+    <style name="studentStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/student_drawable</item>
     </style>
 
 </resources>
